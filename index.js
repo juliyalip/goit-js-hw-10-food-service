@@ -8,6 +8,7 @@ const themeSwitch = document.querySelector('#theme-switch-toggle')// чекбо�
 
 console.log(menuItems({ cartFoods }));
 
+
 //=====================================================================
 const allMenuMarkup = createMenuItems(cartFoods); // результат работы функции разметки одного элемента
 console.log(allMenuMarkup);
@@ -18,7 +19,7 @@ containerMenu.insertAdjacentHTML('beforeend', allMenuMarkup);// добавляе
 
 
 function createMenuItems(cartFoods) {
-  return cartFoods.map(menuItem).join('');
+  return menuItems(cartFoods)// ili - cartFoods.map(menuItem).join('');
 }
 //=============================
 const body = document.querySelector('body')

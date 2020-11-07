@@ -19,7 +19,7 @@ containerMenu.insertAdjacentHTML('beforeend', allMenuMarkup);// добавляе
 
 
 function createMenuItems(cartFoods) {
-  return menuItems(cartFoods)// ili - cartFoods.map(menuItem).join('');
+  return cartFoods.map(menuItem).join('');menuItems(cartFoods)// ili - menuItems(cartFoods);
 }
 //=============================
 const body = document.querySelector('body')

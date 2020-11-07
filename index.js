@@ -6,18 +6,19 @@ import cartFoods from './template/menu.json'; // Файл с динамичес�
 
 const themeSwitch = document.querySelector('#theme-switch-toggle')// чекбокс
 
+console.log(menuItems({ cartFoods }));
 
 //=====================================================================
-const allMenuMarkup = createMenuItems(cartFoods); // razmetka html
+const allMenuMarkup = createMenuItems(cartFoods); // результат работы функции разметки одного элемента
 console.log(allMenuMarkup);
 
 const containerMenu = document.querySelector('.js-menu');
 
-containerMenu.insertAdjacentHTML('beforeend', allMenuMarkup);
+containerMenu.insertAdjacentHTML('beforeend', allMenuMarkup);// добавляет разметку в ДОМ
 
 
 function createMenuItems(cartFoods) {
-  return cartFoods.map(cardFood =>  menuItem(cardFood)).join('');
+  return cartFoods.map(menuItem).join('');
 }
 //=============================
 const body = document.querySelector('body')

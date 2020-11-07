@@ -2,11 +2,7 @@ import theme from './theme';
 import menuItem from './template/menu-item.hbs'; // функция - Шаблон разметки одного элемента
 import menuItems from './template/menu-items.hbs'; // функция - Шаблон всего меню
 import cartFoods from './template/menu.json'; // Файл с динамическими данными
-
-
-const themeSwitch = document.querySelector('#theme-switch-toggle')// чекбокс
-
-console.log(menuItems({ cartFoods }));
+import changeTheme from './theme';
 
 
 //=====================================================================
@@ -19,17 +15,11 @@ containerMenu.insertAdjacentHTML('beforeend', allMenuMarkup);// добавляе
 
 
 function createMenuItems(cartFoods) {
-  return cartFoods.map(menuItem).join('');menuItems(cartFoods)// ili - menuItems(cartFoods);
+  return cartFoods.map(menuItem).join('');// ili - menuItems(cartFoods);
 }
 //=============================
-const body = document.querySelector('body')
 
 
 
-//function pp() {
- // if (themeSwitch.checked === true)
 
-//}
 
-//const body = document.querySelector('body')
-//body.classList.add('dark-theme')

@@ -1,5 +1,4 @@
 import theme from './theme';
-import saveLocalStorage from './theme';
 import menuItem from './template/menu-item.hbs'; // функция - Шаблон разметки одного элемента
 import menuItems from './template/menu-items.hbs'; // функция - Шаблон всего меню
 import cartFoods from './template/menu.json'; // Файл с динамическими данными

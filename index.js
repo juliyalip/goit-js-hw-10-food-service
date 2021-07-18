@@ -1,4 +1,3 @@
- import theme from './theme';
 import menuItem from './template/menu-item.hbs'; // функция - Шаблон разметки одного элемента
 import allMenu from './template/menu.json'; // Файл с динамическими данными
 

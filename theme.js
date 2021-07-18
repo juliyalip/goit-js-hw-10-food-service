@@ -7,10 +7,6 @@ const bodyEL = document.querySelector('body');
 
 const themeSwitch = document.querySelector('#theme-switch-toggle')
 
-console.log(themeSwitch);
-
-
-
 
 themeSwitch.addEventListener('change', changeTheme);
 
